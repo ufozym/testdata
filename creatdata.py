@@ -1,10 +1,10 @@
-# -*- coding: cp936 -*-
+ï»¿# -*- coding: cp936 -*-
 import sys
 
 f1=open("D:\\python-code\\testdata\\testdata1.sql","r+",encoding='utf-8')
 f2=open("D:\\python-code\\testdata\\testdata2.sql","r+",encoding='utf-8')
 
-#Ìæ»»sqlÄ£°åÖĞµÄ£¿
+#æ›¿æ¢sqlæ¨¡æ¿ä¸­çš„ï¼Ÿ
 def replaceStr(strr,src,li):
 
     strtemp = strr
@@ -15,7 +15,7 @@ def replaceStr(strr,src,li):
 
     return(strtemp)
 
-#¹¹Ôì±íÍ·²ÎÊılist
+#æ„é€ è¡¨å¤´å‚æ•°list
 def creatHeadParams(declist,t):
     x = t%10
     if x == 0 :
@@ -107,7 +107,7 @@ def creatHeadParams(declist,t):
         declist.append("1011")
     return(declist)
 
-#¹¹Ôì±íÌå²ÎÊılist
+#æ„é€ è¡¨ä½“å‚æ•°list
 def creatItemsParams(item,t,no):
     x = t%10
     if x == 0 :
@@ -464,12 +464,12 @@ declist_queryTempHead="insert into `cbe_declist` (`ID`, `WAYBILL_ID`, `STATUS`, 
 `DELETE_TIME`, `IS_DELETE`, `MERGE_STATUS`) values"
 
 declist_queryTempList="('?','21','C','ZYO2015060200002','2244',NULL,\
-'?','2015-06-02 00:00:00','Z105980011','ÕÅ·¢»õ',NULL,'?',\
-'?','CEA0000','3105980001','ÉÏº£¶«º½¿ìµİÓĞÏŞ¹«Ë¾','?',\
+'?','2015-06-02 00:00:00','Z105980011','å¼ å‘è´§',NULL,'?',\
+'?','CEA0000','3105980001','ä¸Šæµ·ä¸œèˆªå¿«é€’æœ‰é™å…¬å¸','?',\
 'ZYD2015060200002','ZFD2015060200002',NULL,'?','?','2',NULL,NULL,\
 '0.00000',NULL,NULL,'0.00000',NULL,NULL,'0.00000','3','1','20.00000','10.00000',\
 NULL,'2015-06-02 17:35:02','2015-06-02 14:35:50','2015-06-02 14:46:04','B031',\
-'·ÅĞĞ','DHKJ_Express','2015-06-02 14:35:50','MessageHandler','2015-06-02 17:37:12',\
+'æ”¾è¡Œ','DHKJ_Express','2015-06-02 14:35:50','MessageHandler','2015-06-02 17:37:12',\
 NULL,NULL,'0',''),"
 
 item_queryTempHead="insert into `cbe_declist_item` (`DECLIST_ID`, `NO`, \
@@ -478,7 +478,7 @@ item_queryTempHead="insert into `cbe_declist_item` (`DECLIST_ID`, `NO`, \
 `USD_PRICE`, `USE_TO`, `GROSS_WEIGHT`, `NET_WEIGHT`, `DUTY_MODE`, `NOTES`, \
 `MERGE_TO`) values"
 
-item_queryTempList="('?','?','?','?','´ü×°',\
+item_queryTempList="('?','?','?','?','è¢‹è£…',\
 '9.00000','?','1.00000','?','2.00000','035','10.00000','90.00000','?',\
 NULL,NULL,NULL,'4.50000','4.00000','1',NULL,'40'),"
 
