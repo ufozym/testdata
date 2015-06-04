@@ -3,7 +3,7 @@
 f1=open("D:\\python-code\\testdata\\testdata1.sql","r+",encoding='utf-8')
 f2=open("D:\\python-code\\testdata\\testdata2.sql","r+",encoding='utf-8')
 
-#替换sql模板中的？112344
+#替换sql模板中的？1123443445666
 def replaceStr(strr,src,li):
 
     strtemp = strr
