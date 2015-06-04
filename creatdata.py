@@ -1,5 +1,4 @@
-﻿# -*- coding: cp936 -*-
-import sys
+﻿import sys
 
 f1=open("D:\\python-code\\testdata\\testdata1.sql","r+",encoding='utf-8')
 f2=open("D:\\python-code\\testdata\\testdata2.sql","r+",encoding='utf-8')
@@ -15,7 +14,7 @@ def replaceStr(strr,src,li):
 
     return(strtemp)
 
-#构造表头参数list
+#创建表头参数
 def creatHeadParams(declist,t):
     x = t%10
     if x == 0 :
@@ -107,7 +106,7 @@ def creatHeadParams(declist,t):
         declist.append("1011")
     return(declist)
 
-#构造表体参数list
+#创建表体参数
 def creatItemsParams(item,t,no):
     x = t%10
     if x == 0 :
@@ -480,7 +479,7 @@ item_queryTempHead="insert into `cbe_declist_item` (`DECLIST_ID`, `NO`, \
 
 item_queryTempList="('?','?','?','?','袋装',\
 '9.00000','?','1.00000','?','2.00000','035','10.00000','90.00000','?',\
-NULL,NULL,NULL,'4.50000','4.00000','1',NULL,'40'),"
+NULL,NULL,NULL,'4.50000','4.00000','1',NULL,NULL),"
 
 declist=[]
 item=[]
@@ -488,7 +487,7 @@ declist_sql=''
 item_sql=''
 
 for i in range(0,20):
-    #print(i)
+    print(i)
     
     creatHeadParams(declist,i)
     #print(declist)
